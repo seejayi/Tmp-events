@@ -1,13 +1,28 @@
 {
   "name": "wwwApplicationMain",
   "version": "0.0.0",
-  "private": true,
   "dependencies": {
+    "requirejs": "2.1.9",
+    "requirejs-domready": "2.0.1",
+    "requirejs-text": "2.0.10",
+    "requirejs-plugins": "1.0.2",
+
     "angular": "1.2.19",
     "angular-ui-router": "0.2.5",
-	
+    "angular-sanitize": "v1.3.1-build.3430+sha.6502ab0",
+    "angular-animate": "v1.2.27-build.529+sha.34230b3",
+
+
+
+    "angular-gettext": "0.2.8",
+
     "angular-bootstrap": "0.10.0",
-    "bootstrap-sass-official": "3.3.1"
+    "bootstrap-sass": "3.0.2",
+
+    "signals": "1.0.0",
+    "json3": "3.2.4",
+    "jquery": "2.1.0",
+    "es5-shim": "2.0.8"
   },
   "devDependencies": {
     "sinon": "1.7.3",
