@@ -27,9 +27,11 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="vendors/angular/angular.js"></script>
+    <script src="scripts/mainCtrl.js"></script>
   </head>
 
-  <body>
+  <body ng-app>
 
     <div class="site-wrapper">
 
@@ -41,9 +43,9 @@
             <div class="inner">
               <h3 class="masthead-brand">Cover</h3>
               <nav>
-                <ul class="nav-bar masthead-nav">
-                  <li class="active"><a href="#">Current time</a></li>
-                  <li><a href="#">Add event</a></li>
+                <ul class="nav-bar masthead-nav" ng-click="$event.preventDefault()">
+                  <li class="home {{active}}"><a href="#" ng-click="active='home'">Current time</a></li>
+                  <li class="add-event {{active}}"><a href="#" ng-click="active='add-event'">Add event</a></li>
                 </ul>
               </nav>
             </div>
@@ -51,7 +53,7 @@
 
           <div class="inner cover">
             <h1 class="cover-heading">Right now:<br></h1>
-            
+
             <form name="clock">
               <input  type="text" size="8" value="" name="time" >
             </form>
